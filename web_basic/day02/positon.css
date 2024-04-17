@@ -1,0 +1,56 @@
+.top{
+    position: relative; 
+    top: 5px;
+    z-index: 1;
+}
+
+.right {
+    position: relative;
+    right: 5px;
+}
+
+.bottom {
+    position: relative;
+    bottom: 5px;
+}
+
+.left {
+    position: relative;
+    left: 5px;
+}
+
+#fixed {
+    background: yellow;
+    position: fixed;
+    right: 0;
+}
+
+#absolute {
+    background: yellow;
+    position: absolute;
+    right: 0;
+}
+
+#parent {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background: skyblue;
+}
+
+#child {
+    position: inherit;
+    right: 0;
+}
+
+.float-container {
+    width: 320px;
+    border: 2px solid #09c;
+}
+
+.float-container img{
+    float: left;
+    margin: 5px;
+    padding: 5px;
+    border: 2px solid #90c;
+}
