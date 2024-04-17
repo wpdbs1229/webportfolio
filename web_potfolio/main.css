@@ -14,6 +14,11 @@ a {
     color: black;
 }
 
+.je__youn{
+    background: linear-gradient(120deg,#f7f9fa -2.06%, #df07ff 100%);
+    background-clip: text;
+    color: transparent;
+}
 .header-nav {
     display: flex;
     flex-wrap: wrap;
