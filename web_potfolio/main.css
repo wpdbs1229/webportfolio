@@ -81,7 +81,7 @@ a {
     text-align: center;
 }
 
-.tech-stack-title{
+h1 {
     font-size: 50px;
     margin-block-end: 0px;
 }
@@ -107,3 +107,75 @@ a {
     width: 70px;
     height: 70px;
 }
+
+#project-section {
+    padding-bottom: 300px;
+    margin: auto;
+    width: 90%;
+
+  }
+  .project-items {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+  }
+  .project-item {
+    box-shadow: 2px 2px 100px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+  }
+  .project-thumbnail {
+    width: 100%;
+    height: 256px;
+    /* 위쪽 둥글게 둥글게 */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    /* 배경 이미지 가운데 정렬, 가득차게 */
+    background-image: url("https://source.unsplash.com/random/400×400");
+    background-position: center;
+    background-size: cover;
+  }
+  .project-content {
+    padding: 30px;
+    /* 세로 간격(gap)을 일정하게 주기 위해 flex 적용 */
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  .project-content h4 {
+    color: #42446e;
+    font-size: 24px;
+    font-weight: 700;
+  }
+  .project-link {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+  .project-link a {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+  
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    text-decoration-line: underline;
+  }
+  
+  .project-desc {
+    color: #666;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 26px; /* 144.444% */
+  }
+  
+  .project-tech-stack {
+    color: #42446e;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 162.5% */
+  }
+  
