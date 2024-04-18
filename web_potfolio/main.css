@@ -19,6 +19,7 @@ a {
     background-clip: text;
     color: transparent;
 }
+
 .header-nav {
     display: flex;
     flex-wrap: wrap;
