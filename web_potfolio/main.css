@@ -287,6 +287,7 @@ footer {
     color: #42446e;
     text-decoration: none;
   }
+  
   footer .footer-links {
     display: flex;
     gap: 20px;
