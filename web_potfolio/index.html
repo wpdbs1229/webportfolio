@@ -8,23 +8,29 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
+
+    <!-- Header -->
     <header>
+
         <!-- navigation -->
         <nav class="header-nav">
+            
+            <!-- Logo -->
             <div class="logo">
                 <img src="./img/leeLogo.png" alt="logo" width="100" height="80">
             </div>
-            <!--menu-list-->
-            <ul class = menu-list>
-                <li><a href="#"><strong>Home</a></strong></li>
-                <li><a href="#"><strong>About</strong></a></li>
-                <li><a href="#"><strong>Tech Stack</strong></a></li>
-                <li><a href="#"><strong>Projects</strong></a></li>
-                <li><a href="#"><strong>Contact</strong></a></li>
+
+            <!--menu ist-->
+            <ul class = "menu-list">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Tech Stack</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
             
-            <!--연락처 부분-->
-            <ul class = contact-list>
+            <!-- contact list -->
+            <ul class = "contact-list">
                 <li><img src="img/github.png" alt="Github", class="contact-img"><a href="https://github.com/wpdbs1229"></a></img></li>
                 <li><img src="img/instagram.png" alt="instagram", class="contact-img"><a href="https://www.instagram.com/je__youn/"></a></img></li>
                 <li><img src="img/Blog.png" alt="Blog", class="contact-img"><a href="https://hidevelop.tistory.com/"></a></img></li>
@@ -35,16 +41,16 @@
     <section class="wrap-intro">
         <div class="intro">
                 안녕하세요👋
-                <br>고양이를 좋아하는
-                <br>백엔드 개발자 <span class=je__youn>제윤</span>이에요.
+                <br><span class = "je__youn">고양이</span>를 좋아하는
+                <br>백엔드 개발자 <span class="je__youn">제윤</span>이에요.
         </div>
         <img src="img/Lee.png" alt="Lee", width="150">
             
     </section>
 
     <section class="wrap-tech-stack">
-        <h1>Tech Stack</h1>
-        <p class="tech-stack-content">Technologies I've been working with recently</p>
+        <h1 class = "tech-title">Tech Stack</h1>
+        <p class="tech-stack-content">제가 경험해본 기술들이에요 💻</p>
         <ul class = "tech-stack-imgs">
             <li><img src="img/spring.png" alt="Spring Boot" class="tech-stack-img"></li>
             <li><img src="img/java.png" alt="Java" class="tech-stack-img"></li>
@@ -63,8 +69,8 @@
 
     <section id="project-section">
         <div class="section-text">
-          <h2>Projects</h2>
-          <p>제가 진행한 프로젝트들이에요</p>
+          <h1 id = "project-title">Projects</h1>
+          <p id = "project-title-desc">제가 진행한 프로젝트들이에요!! 👨🏻‍💻</p>
         </div>
         <div class="project-items">
           <!-- 프로젝트 1-->
@@ -201,8 +207,8 @@
       <!-- 이메일/연락처/SNS -->
       <div class="footer-content">
         <div class="footer-contact">
-          <a href="tel:+1234567890">010-1234-5678</a>
-          <a href="mailto:cookie00421@gmail.com">cookie00421@gmail.com</a>
+          <a href="tel:+010123456">010-1234-5678</a>
+          <a href="mailto:dlwpdbs1229@kakao.com">cookie00421@gmail.com</a>
           <div class="footer-links">
             <a href="https://github.com/wpdbs1229" target="_blank">
               <img src="img/github.png" alt="github" width="50px" height="50px" />
