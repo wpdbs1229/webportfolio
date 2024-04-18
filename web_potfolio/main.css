@@ -249,3 +249,64 @@ a {
     line-height: 26px; /* 162.5% */
   }
   
+
+  /* ---- footer ---- */
+footer {
+    display: flex;
+    flex-direction: column;
+    gap: 52px;
+    padding-bottom: 50px;
+  }
+  .footer-content {
+    display: flex;
+  
+    justify-content: space-between;
+  }
+  .footer-upper {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .footer-logo {
+    width: 97px;
+    height: 59px;
+  }
+  
+  .footer-contact {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    /* 텍스트 스타일 */
+    color: #42446e;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+  }
+  .footer-contact a {
+    /* 기본속성으로 적용되어 있는 언더라인 제거 */
+    color: #42446e;
+    text-decoration: none;
+  }
+  footer .footer-links {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .hr {
+    width: 100%;
+    border-bottom: solid 1px #666;
+  }
+  
+  .madeby {
+    color: #666;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 144.444% */
+  }
+  .madeby span {
+    background: linear-gradient(0deg, #13b0f5 -2.06%, #e70faa 100%);
+    background-clip: text;
+    color: transparent; /* 글자 색을 투명하게 */
+  }
