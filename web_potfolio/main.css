@@ -76,6 +76,7 @@ a {
 }
 
 .wrap-tech-stack{
+    padding: 30px;
     align-items: center;
     text-align: center;
 }
@@ -92,7 +93,17 @@ a {
     margin-block-start: 0px;
 }
 
-.tech-stack-img{
-   width: 100px;
-   height: 100px; 
+.tech-stack-imgs{
+
+  display: flex;
+  justify-content: space-evenly;
+  gap: 50px;
+  flex-wrap: wrap;
+  width: 70%;
+  margin: auto;
+}
+
+.tech-stack-img {
+    width: 70px;
+    height: 70px;
 }
