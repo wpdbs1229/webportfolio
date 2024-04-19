@@ -4,27 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Portpolio</title>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+25&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
+
+    <!-- Header -->
     <header>
+
         <!-- navigation -->
         <nav class="header-nav">
+            
+            <!-- Logo -->
             <div class="logo">
                 <img src="./img/leeLogo.png" alt="logo" width="100" height="80">
             </div>
-            <!--menu-list-->
-            <ul class = menu-list>
-                <li><a href="#"><strong>Home</a></strong></li>
-                <li><a href="#"><strong>About</strong></a></li>
-                <li><a href="#"><strong>Tech Stack</strong></a></li>
-                <li><a href="#"><strong>Projects</strong></a></li>
-                <li><a href="#"><strong>Contact</strong></a></li>
+
+            <!--menu ist-->
+            <ul class = "menu-list">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Tech Stack</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
             
-            <!--연락처 부분-->
-            <ul class = contact-list>
+            <!-- contact list -->
+            <ul class = "contact-list">
                 <li><img src="img/github.png" alt="Github", class="contact-img"><a href="https://github.com/wpdbs1229"></a></img></li>
                 <li><img src="img/instagram.png" alt="instagram", class="contact-img"><a href="https://www.instagram.com/je__youn/"></a></img></li>
                 <li><img src="img/Blog.png" alt="Blog", class="contact-img"><a href="https://hidevelop.tistory.com/"></a></img></li>
@@ -35,69 +43,192 @@
     <section class="wrap-intro">
         <div class="intro">
                 안녕하세요👋
-                <br>고양이를 좋아하는
-                <br>백엔드 개발자 <span class=je_-youn>제윤</span>이에요.
+                <br><span class = "je__youn">고양이</span>를 좋아하는
+                <br>백엔드 개발자 <span class="je__youn">제윤</span>이에요.
         </div>
         <img src="img/Lee.png" alt="Lee", width="150">
             
     </section>
 
     <section class="wrap-tech-stack">
-        <h1 class="tech-stack-title"><strong>Tech Stack</strong></h1>
-        <p class="tech-stack-content">Technologies I've been working with recently</p>
-        <img src="img/spring.png" alt="Spring Boot" class="tech-stack-img">
-        <img src="img/java.png" alt="Java" class="tech-stack-img">
-        <img src="img/mariadb.png" alt="MariaDB" class="tech-stack-img">
-        <img src="img/mysql.png" alt="MySQL" class="tech-stack-img">
-        <img src="img/html.png" alt="HTML" class="tech-stack-img">
-        <img src="img/css.png" alt="CSS" class="tech-stack-img">
-        <img src="img/js.png" alt="JavaScript" class="tech-stack-img">
-        <img src="img/react.png" alt="React" class="tech-stack-img">
-        <img src="img/aws.png" alt="AWS" class="tech-stack-img">
-        <img src="img/docker.png" alt="Docker" class="tech-stack-img">
-        <img src="img/jenkins.jpeg" alt="Jenkins" class="tech-stack-img">
+        <h1 class = "tech-title">Tech Stack</h1>
+        <p class="tech-stack-content">제가 경험해본 기술들이에요 💻</p>
+        <ul class = "tech-stack-imgs">
+            <li><img src="img/spring.png" alt="Spring Boot" class="tech-stack-img"></li>
+            <li><img src="img/java.png" alt="Java" class="tech-stack-img"></li>
+            <li><img src="img/mariadb.png" alt="MariaDB" class="tech-stack-img"></li>
+            <li><img src="img/mysql.png" alt="MySQL" class="tech-stack-img"></li>
+            <li><img src="img/html.png" alt="HTML" class="tech-stack-img"></li>
+            <li><img src="img/css.png" alt="CSS" class="tech-stack-img"></li>
+            <li><img src="img/js.png" alt="JavaScript" class="tech-stack-img"></li>
+            <li><img src="img/react.png" alt="React" class="tech-stack-img"></li>
+            <li><img src="img/aws.png" alt="AWS" class="tech-stack-img"></li>
+            <li><img src="img/docker.png" alt="Docker" class="tech-stack-img"></li>
+            <li><img src="img/jenkins.png" alt="Jenkins" class="tech-stack-img"></li>
+        </ul>
     </section>
 
 
-    <section class ="projects">
-        <div class="project">
-            <img src="" alt="" class="project-img">
-            <p class="project-title">대충 프로젝트 제목</p>
-            <p class="project-content">대충 프로젝트 내용</p>
-            
+    <section id="project-section">
+        <div class="section-text">
+          <h1 id = "project-title">Projects</h1>
+          <p id = "project-title-desc">제가 진행한 프로젝트들이에요!! 👨🏻‍💻</p>
         </div>
-        <div class="project">
-            <img src="" alt="" class="project-img">
-            <p>대충 프로젝트 설명이라는 애기</p>
+        <div class="project-items">
+          <!-- 프로젝트 1-->
+          <article class="project-item">
+            <div class="project-thumbnail"></div>
+            <div class="project-content">
+              <h4>소중한 멍멍 프로젝트</h4>
+              <p class="project-desc">강아지도 멍권이 있다고 주장하고 싶은 강아지들을 위한 커뮤니티</p>
+              <div class="project-tech-stack">기술스택: React, Webapp, Github, AWS S3</div>
+              <!-- 바로가기 링크 -->
+              <div class="project-link">
+                <a href="#">
+                  <img src="./img/link.png">
+                  <div>Notion</div>
+                </a>
+                <a href="#">
+                  <img src="./img/github.png">
+                  <div>View Code</div>
+                </a>
+              </div>
+            </div>
+          </article>
+          <!-- 프로젝트 2 -->
+          <article class="project-item">
+            <div class="project-thumbnail"></div>
+            <div class="project-content">
+              <h4>소중한 멍멍 프로젝트</h4>
+              <p class="project-desc">강아지도 멍권이 있다고 주장하고 싶은 강아지들을 위한 커뮤니티</p>
+              <div class="project-tech-stack">기술스택: React, Webapp, Github, AWS S3</div>
+              <!-- 바로가기 링크 -->
+              <div class="project-link">
+                <a href="#">
+                  <img src="./img/link.png">
+                  <div>Notion</div>
+                </a>
+                <a href="#">
+                  <img src="./img/github.png">
+                  <div>View Code</div>
+                </a>
+              </div>
+            </div>
+          </article>
+          <!-- 프로젝트 3 -->
+          <article class="project-item">
+            <div class="project-thumbnail"></div>
+            <div class="project-content">
+              <h4>소중한 멍멍 프로젝트</h4>
+              <p class="project-desc">강아지도 멍권이 있다고 주장하고 싶은 강아지들을 위한 커뮤니티</p>
+              <div class="project-tech-stack">기술스택: React, Webapp, Github, AWS S3</div>
+              <!-- 바로가기 링크 -->
+              <div class="project-link">
+                <a href="#">
+                  <img src="./img/link.png">
+                  <div>Notion</div>
+                </a>
+                <a href="#">
+                  <img src="./img/github.png">
+                  <div>View Code</div>
+                </a>
+              </div>
+            </div>
+          </article>
+    
+    
+    
+          <!-- 프로젝트 3 -->
+          <article class="project-item">
+            <div class="project-thumbnail"></div>
+            <div class="project-content">
+              <h4>소중한 멍멍 프로젝트</h4>
+              <p class="project-desc">강아지도 멍권이 있다고 주장하고 싶은 강아지들을 위한 커뮤니티</p>
+              <div class="project-tech-stack">기술스택: React, Webapp, Github, AWS S3</div>
+              <!-- 바로가기 링크 -->
+              <div class="project-link">
+                <a href="#">
+                  <img src="./img/link.png">
+                  <div>Notion</div>
+                </a>
+                <a href="#">
+                  <img src="./img/github.png">
+                  <div>View Code</div>
+                </a>
+              </div>
+            </div>
+          </article>
+          <!-- 프로젝트 3 -->
+          <article class="project-item">
+            <div class="project-thumbnail"></div>
+            <div class="project-content">
+              <h4>소중한 멍멍 프로젝트</h4>
+              <p class="project-desc">강아지도 멍권이 있다고 주장하고 싶은 강아지들을 위한 커뮤니티</p>
+              <div class="project-tech-stack">기술스택: React, Webapp, Github, AWS S3</div>
+              <!-- 바로가기 링크 -->
+              <div class="project-link">
+                <a href="#">
+                  <img src="./img/link.png">
+                  <div>Notion</div>
+                </a>
+                <a href="#">
+                  <img src="./img/github.png">
+                  <div>View Code</div>
+                </a>
+              </div>
+            </div>
+          </article>
+          <!-- 프로젝트 4 -->
+          <article class="project-item">
+            <div class="project-thumbnail"></div>
+            <div class="project-content">
+              <h4>소중한 멍멍 프로젝트</h4>
+              <p class="project-desc">강아지도 멍권이 있다고 주장하고 싶은 강아지들을 위한 커뮤니티</p>
+              <div class="project-tech-stack">기술스택: React, Webapp, Github, AWS S3</div>
+              <!-- 바로가기 링크 -->
+              <div class="project-link">
+                  <a href="#">
+                      <img src="./img/link.png">
+                      <div>Notion</div>
+                    </a>
+                    <img src="./img/github.png">
+                    <a href="#">
+                  <div>View Code</div>
+                </a>
+              </div>
+            </div>
+          </article>
         </div>
-        <div class="project">
-            <img src="" alt="" class="project-img">
-            <p>대충 프로젝트 설명이라는 애기</p>
+      </section>
+    
+      
+      <footer>
+    <div class="footer-upper">
+      <!-- 로고 -->
+      <img class="footer-logo" src="img/leeLogo.png" alt="logo" width="50px" height="70px"/>
+      <!-- 이메일/연락처/SNS -->
+      <div class="footer-content">
+        <div class="footer-contact">
+          <a href="tel:+010123456">010-1234-5678</a>
+          <a href="mailto:dlwpdbs1229@kakao.com">cookie00421@gmail.com</a>
+          <div class="footer-links">
+            <a href="https://github.com/wpdbs1229" target="_blank">
+              <img src="img/github.png" alt="github" width="50px" height="50px" />
+            </a>
+            <a href="https://hidevelop.tistory.com/" target="_blank">
+              <img src="./img/blog.png" alt="Blog" width="50px" height="50px"/>
+            </a>
+          </div>
         </div>
-    </section>
-
-    <nav class = "bottom-nav">
-        <span>로고</span>
-        <span>연락처 이메일</span>
-        <div class="nav_2">
-            <ul>
-                <li><img src="img/github.jpeg" alt="Github", width="40"><a href="https://github.com/wpdbs1229"></a></img></li>
-                <li><img src="img/instagram.png" alt="instagram", width="40"><a href="https://www.instagram.com/je__youn/"></a></img></li>
-                <li><img src="img/Blog.png" alt="Blog", width="40"><a href="https://hidevelop.tistory.com/"></a></img></li>
-            </ul>
-        </div>
+      </div>
     </div>
-    <hr>
-    <footer>
-            <ul class=meue-list>
-                <li><a href="#"></a><strong>Home</strong></li>
-                <li><a href="#"></a><strong>About</strong></li>
-                <li><a href="#"></a><strong>Tech Stack</strong></li>
-                <li><a href="#"></a><strong>Projects</strong></li>
-                <li><a href="#"></a><strong>Contact</strong></li>
-            </ul>
-            <div>Designed and built by Pavan MG with Love & Coffee</div>
-        </div>
-    </footer>
+    <!-- 가로 선 -->
+    <div class="hr"></div>
+    <div class="madeby">
+      Designed and built by Pavan <span>MG</span>
+      with <span>Love</span> & <span>Coffee</span>
+      &copy; 2024
+    </div>
+  </footer>
 </body>
 </html>

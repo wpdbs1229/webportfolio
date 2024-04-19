@@ -1,3 +1,4 @@
+/* -----공통 부분-----*/
 ul{
     list-style: none;
     margin: 0;
@@ -14,6 +15,17 @@ a {
     color: black;
 }
 
+h1{
+    color: #168440;
+    font-size: 300%;
+    font-weight: 900;
+    margin-block-start: 0.83em;
+    margin-block-end: 0;
+}
+
+
+
+/* ----- header ----*/
 .header-nav {
     display: flex;
     flex-wrap: wrap;
@@ -21,7 +33,6 @@ a {
     align-items: center;
     padding: 20px;
 }  
-
 
 .menu-list{
     margin: 0;
@@ -44,14 +55,18 @@ a {
     width: 40px;
     height: 40px;
 }
+
 .contact-list li img{
     width: 100%;
     height: 100%;
 }
+
 .contact-img{
     width: 10%;
     height: 30%;
 }
+
+/* ----- intro ----*/
 .wrap-intro{
     display: flex;
     justify-content: space-around;
@@ -60,7 +75,23 @@ a {
 }
 
 .intro {
-    font-size: 200%;
+    font-size: 300%;
+    font-weight: bolder;
+}
+
+.je__youn{
+    background: linear-gradient(120deg,#64e852 -2.06%, #168440 100%);
+    background-clip: text;
+    color: transparent;
+}
+
+/*------ tech stack -------*/
+
+.tech-stack-content{
+
+    font-size: 20px;
+    color: gray;
+    margin-block-start: 0px;
 }
 
 .wrap-intro img {
@@ -70,23 +101,178 @@ a {
 }
 
 .wrap-tech-stack{
+    
+    padding: 30px;
     align-items: center;
     text-align: center;
 }
 
-.tech-stack-title{
-    font-size: 50px;
-    margin-block-end: 0px;
+
+
+.tech-stack-imgs{
+
+  display: flex;
+  justify-content: space-evenly;
+  gap: 50px;
+  flex-wrap: wrap;
+  width: 70%;
+  margin: auto;
 }
 
-.tech-stack-content{
+.tech-stack-img {
+    width: 70px;
+    height: 70px;
+}
+/*-------- Project -------*/
+.section-text{
+    text-align: center;
+}
+
+#project-title {
     
-    font-size: 20px;
-    color: gray;
-    margin-block-start: 0px;
 }
 
-.tech-stack-img{
-   width: 100px;
-   height: 100px; 
+#project-section {
+    padding-bottom: 300px;
+    margin: auto;
+    width: 90%;
+
+  }
+  .project-items {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+  }
+  .project-item {
+    box-shadow: 2px 2px 100px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+  }
+  .project-thumbnail {
+    width: 100%;
+    height: 256px;
+    /* 위쪽 둥글게 둥글게 */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    /* 배경 이미지 가운데 정렬, 가득차게 */
+    background-image: url("https://source.unsplash.com/random/400×400");
+    background-position: center;
+    background-size: cover;
+  }
+  .project-content {
+    padding: 30px;
+    /* 세로 간격(gap)을 일정하게 주기 위해 flex 적용 */
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  .project-content h4 {
+    color: #42446e;
+    font-size: 24px;
+    font-weight: 700;
+  }
+  .project-link {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+  .project-link a {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+  
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    text-decoration-line: underline;
+  }
+
+  .project-link img {
+    width: 20px;
+    height: 20px;
 }
+  
+  .project-desc {
+    color: #666;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 26px; /* 144.444% */
+  }
+  
+  .project-tech-stack {
+    color: #42446e;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 162.5% */
+  }
+  
+
+  /* ---- footer ---- */
+footer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-bottom: 50px;
+  }
+  .footer-content {
+    display: flex;
+  
+    justify-content: space-between;
+  }
+  .footer-upper {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .footer-logo {
+    width: 100px;
+    height: 80px;
+  }
+  
+  .footer-contact {
+    display: flex;
+    gap: 40px;
+    align-items: end;
+    /* 텍스트 스타일 */
+    color: #42446e;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+  }
+  .footer-contact a {
+    /* 기본속성으로 적용되어 있는 언더라인 제거 */
+    color: #42446e;
+    text-decoration: none;
+  }
+  
+  footer .footer-links {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .hr {
+    width: 100%;
+    border-bottom: solid 1px #666;
+  }
+  
+  .madeby {
+    color: #666;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 144.444% */
+  }
+  .madeby span {
+    background: linear-gradient(0deg, #13b0f5 -2.06%, #e70faa 100%);
+    background-clip: text;
+    color: transparent; /* 글자 색을 투명하게 */
+  }
+
+  .jersey-25-regular {
+    font-family: "Jersey 25", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
