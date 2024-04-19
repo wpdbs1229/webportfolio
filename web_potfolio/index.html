@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Portpolio</title>
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jersey+25&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="main.css">
+    
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./responsive.css">
 </head>
 <body>
 
@@ -23,12 +26,12 @@
             </div>
 
             <!--menu ist-->
-            <ul class = "menu-list">
+            <ul class = "menu-list mobile">
                 <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Tech Stack</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#intro">About</a></li>
+                <li><a href="#tech-title">Tech Stack</a></li>
+                <li><a href="#project-title">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
             
             <!-- contact list -->
@@ -41,17 +44,19 @@
     </header>
 
     <section class="wrap-intro">
-        <div class="intro">
+        <div id="intro" class="intro">
                 안녕하세요👋
                 <br><span class = "je__youn">고양이</span>를 좋아하는
                 <br>백엔드 개발자 <span class="je__youn">제윤</span>이에요.
         </div>
-        <img src="img/Lee.png" alt="Lee", width="150">
+          <img src="img/Lee.png" alt="Lee", width="150">
+        
+        
             
     </section>
 
     <section class="wrap-tech-stack">
-        <h1 class = "tech-title">Tech Stack</h1>
+        <h1 id="tech-title" class = "tech-title">Tech Stack</h1>
         <p class="tech-stack-content">제가 경험해본 기술들이에요 💻</p>
         <ul class = "tech-stack-imgs">
             <li><img src="img/spring.png" alt="Spring Boot" class="tech-stack-img"></li>
@@ -209,7 +214,7 @@
       <!-- 이메일/연락처/SNS -->
       <div class="footer-content">
         <div class="footer-contact">
-          <a href="tel:+010123456">010-1234-5678</a>
+          <a id ="contact"href="tel:+010123456">010-1234-5678</a>
           <a href="mailto:dlwpdbs1229@kakao.com">cookie00421@gmail.com</a>
           <div class="footer-links">
             <a href="https://github.com/wpdbs1229" target="_blank">

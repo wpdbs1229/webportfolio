@@ -85,6 +85,7 @@ h1{
     color: transparent;
 }
 
+
 /*------ tech stack -------*/
 
 .tech-stack-content{
@@ -96,8 +97,9 @@ h1{
 
 .wrap-intro img {
     border-radius: 50%;
-    height: 200px;
-    width: 200px;
+    border: #43bf68 solid 4px;
+    height: 250px;
+    width: 250px;
 }
 
 .wrap-tech-stack{
@@ -128,9 +130,6 @@ h1{
     text-align: center;
 }
 
-#project-title {
-    
-}
 
 #project-section {
     padding-bottom: 300px;
